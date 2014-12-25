@@ -1,59 +1,11 @@
-NAME
-    Complete::Riap - Riap-related completion routines
-
-VERSION
-    This document describes version 0.01 of Complete::Riap (from Perl
-    distribution Complete-Riap), released on 2014-12-02.
-
 SYNOPSIS
+
      use Complete::Riap qw(complete_riap_url);
      my $res = complete_riap_url(word => '/Te', type=>'package');
      # -> {word=>['/Template/', '/Test/', '/Text/'], path_sep=>'/'}
 
-FUNCTIONS
-  complete_riap_url(%args) -> any
-    Complete Riap URL.
-
-    Currently only support local Perl schemes (e.g. "/Pkg/Subpkg/function"
-    or "pl:/Pkg/Subpkg/").
-
-    Arguments ('*' denotes required arguments):
-
-    *   type => *str*
-
-        Filter by entity type.
-
-    *   word* => *str*
-
-    Return value:
-
-     (any)
-
 TODO
+
     'ci' option (this should perhaps be implemented in
     Perinci::Access::Schemeless?).
-
-HOMEPAGE
-    Please visit the project's homepage at
-    <https://metacpan.org/release/Complete-Riap>.
-
-SOURCE
-    Source repository is at
-    <https://github.com/perlancar/perl-Complete-Riap>.
-
-BUGS
-    Please report any bugs or feature requests on the bugtracker website
-    <https://rt.cpan.org/Public/Dist/Display.html?Name=Complete-Riap>
-
-    When submitting a bug or request, please include a test-file or a patch
-    to an existing test-file that illustrates the bug or desired feature.
-
-AUTHOR
-    perlancar <perlancar@cpan.org>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by perlancar@cpan.org.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
 
